@@ -8,9 +8,26 @@
   
   <title>Frontend Mentor | Blog preview card</title>
   <style>
+    @font-face {
+      font-family: 'Figtree';
+      src: local('Figtree-VariableFont_wght'),url('assets/fonts/Figtree-VariableFont_wght.ttf');
+    }
     body {
       background-color: #F5D04E;
+      font-family: Figtree;
     }
+
+    @media (min-width: 768px) {
+      body {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    }
+
     .attribution {
       text-align: center;
     }
@@ -18,7 +35,7 @@
       max-width: 500px;
       height: 650px;
       border-radius: 10px;
-      margin: 0 auto;
+      /* margin: 0 auto; */
       padding: 20px;
       border-radius: 20px;
       background-color: white;
@@ -49,18 +66,17 @@
       color: #666;
     }
     .author {
+      display: flex;
+      align-items: center;
       height: 50px;
     }
     .authorName {
-      display: inline;
       font-weight: 800;
       line-height: 50px;
     }
     .authorPhoto {
-      display: inline;
       height: 100%;
       margin-right: 10px;
-      vertical-align: bottom;
     }
     .title:hover {
       color: #F5D04E;
