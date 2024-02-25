@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+    body {
+      background-color: #F5D04E;
+    }
+    .attribution {
+      text-align: center;
+    }
+    .card {
+      max-width: 500px;
+      height: 650px;
+      border-radius: 10px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: white;
+      border: solid 1px black;
+      box-shadow:  10px 10px 0 rgba(0, 0, 0, 1);
+    }
+    .illustration {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .type {
+      font-weight: bold;
+      background-color: #F5D04E;
+      max-width: 90px;
+      min-height: 30px;
+      border-radius: 5px;
+      text-align: center;
+      padding: 3px;
+      line-height: 30px;
+    }
+    .title {
+      font-weight: 800;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .content {
+      color: #666;
+    }
+    .author {
+      height: 50px;
+    }
+    .authorName {
+      display: inline;
+      font-weight: 800;
+      line-height: 50px;
+    }
+    .authorPhoto {
+      display: inline;
+      height: 100%;
+      margin-right: 10px;
+      vertical-align: bottom;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="illustration" src="assets/images/illustration-article.svg" alt="illustration-article">
+    <div class="type">Learning</div>
+    <p>Published 21 Dec 2023</p>
+    <h1 class="title">HTML&CSS foundations</h1>
+    <p class="content">This HTML & CSS-only challenge is a perfect project for beginners getting up to speed with HTML and CSS fundamentals, like HTML structure and the box model.</p>
+    <div class="author">
+      <img class="authorPhoto" src="assets/images/image-avatar.webp">
+      <p class="authorName">Greg Hooper</p>
+    </div>
+  </div>  
+  <!-- <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jason Shen</a>.
+  </footer> -->
+</body>
+</html>
